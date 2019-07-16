@@ -22,6 +22,7 @@
 
     <p>store {{showList}}</p>
     <p>lista test {{user}}</p>
+    <p class="red">{{showMen1}}</p>
 
     <p
       v-for="(item,index) in showJob"
@@ -127,6 +128,10 @@ export default {
       if (this.$store.state.pracownik.Czas === "") {
         return 0;
       }
+    },
+    showMen1() {
+       const test1 = this.$store.state.Kowalski_Jan
+      return JSON.parse(test1) ;
     }
   },
   methods: {
@@ -163,6 +168,9 @@ header {
      padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+.red {
+  color: red;
 }
 </style>
 

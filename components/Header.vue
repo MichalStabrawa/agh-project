@@ -10,7 +10,7 @@
 
 <style scoped lang="scss">
 .header {
-  background-image: url("./../assets/img/header.png");
+  background-image:linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(89,89,89,0.1) 12%, rgba(102,102,102,0.5) 25%, rgba(71,71,71,0.5) 39%, rgba(43,43,43,0.1) 76%, rgba(28,28,28,0.2) 91%, rgba(19,19,19,0.2) 100%), url("./../assets/img/header.png");
   height: calc(100vh - 60px);
   background-size: cover;
   background-position: center;
