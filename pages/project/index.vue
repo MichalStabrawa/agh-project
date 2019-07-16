@@ -27,12 +27,18 @@
       v-for="(item,index) in showJob"
       :key="index"
     >{{index+1}}:{{item.Data}} {{item.Zadanie}} {{item.Czas}}</p>
+    <FooterVue />
   </div>
 </template>
 
 <script>
+import FooterVue from '../../components/FooterVue';
+
 export default {
   layout: "default",
+  components: {
+    FooterVue
+  },
   data() {
     return {
       val: "",
