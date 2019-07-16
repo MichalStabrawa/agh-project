@@ -3,7 +3,7 @@
     <header class="wrapper">
       <h1>{{title}}</h1>
       <h2>{{author}}</h2>
-      <button class="btn-header">Dalej</button>
+      <button class="btn-header" @click="goTo">Dalej</button>
     </header>
   </header>
 </template>
@@ -27,6 +27,9 @@
   h1 {
     font-size: 40px;
   }
+  h2 {
+    font-size: 24px;
+  }
 }
 .btn-header {
   width: 150px;
@@ -45,8 +48,13 @@ export default {
   data() {
     return {
       title: "Projekt Zaliczeniowy AGH",
-      author: "Michał Stabrawa"
+      author: "Metody Wytwarzania Oprograowania"
     };
+  },
+  methods: {
+    goTo() {
+      this.$router.push("/project/");
+    }
   }
 };
 </script>
