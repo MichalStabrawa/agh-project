@@ -1,4 +1,5 @@
 export const state = () => ({
+  
   list: [
     {
       userId: 1,
@@ -132,5 +133,6 @@ export const state = () => ({
           }
       ]
   }
-  ]
+  ],
+  
 })

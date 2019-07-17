@@ -118,6 +118,7 @@ export default {
   mounted() {
     console.log(this.showList);
     console.log(this.showList);
+    ;
   },
   computed: {
     showList() {
@@ -131,7 +132,7 @@ export default {
     },
     showMen1() {
        const test1 = this.$store.state.Kowalski_Jan
-      return JSON.parse(test1) ;
+      return test1 ;
     }
   },
   methods: {
